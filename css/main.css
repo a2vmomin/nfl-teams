@@ -20,10 +20,10 @@
   text-decoration: none;
   font-size: 18px;
 }
-.nfl-teams .nfl-tabs li a:hover, .nfl-teams .nfl-tabs li a.active {
-  background-color: #ab3c3c;
-  color: #ffffff;
-  text-decoration: none;
+.nfl-teams .nfl-tabs li a:hover, .nfl-teams .nfl-tabs li a:focus, .nfl-teams .nfl-tabs li a.active {
+  background-color: #ab3c3c !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 .nfl-teams .nfl-tabs li a:not(.active) {
   border-right: 1px solid #ccc;
@@ -78,6 +78,8 @@
   color: #ffffff;
   margin-bottom: 16px;
   text-shadow: #3c3c3c 0px 1px 2px;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 .nfl-teams .team-info .team-name-container .team-profile-link {
   display: inline-block;
@@ -95,8 +97,22 @@
 .nfl-teams .team-info .team-logo {
   width: 33%;
   padding-left: 16px;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
   flex-basis: auto;
   object-fit: contain;
+  display: block;
+}
+.nfl-teams .team-info.no-flex {
+  display: block;
+}
+.nfl-teams .team-info.no-flex .team-name-container {
+  width: 100%;
+}
+.nfl-teams .team-info.no-flex .team-logo {
+  width: 100%;
+  padding-right: 16px;
 }
 .nfl-teams #nfl-table-container {
   margin: 35px 0;
