@@ -1,0 +1,10 @@
+.nfl-teams *,
+.nfl-teams h1,
+.nfl-teams h2,
+.nfl-teams h3 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=base.css.map */
