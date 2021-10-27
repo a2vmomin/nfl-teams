@@ -1,5 +1,9 @@
 # NFL Teams
 
+## Use the plugin
+
+Use [nfl-teams] shortcode to display the NFL teams data.
+
 ## Build the plugin
 
 Step 1: Locate the plugin folder and open in the terminal.
