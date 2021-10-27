@@ -35,36 +35,11 @@ function nfl_scripts_and_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'nfl_scripts_and_styles', 20 );
 
-// register_activation_hook( __FILE__, 'nfl_activated' );
-// register_deactivation_hook( __FILE__, 'nfl_deactivated' );
-// register_uninstall_hook( __FILE__, 'nfl_uninstalled' );
-
 /**
  * Adding a hook into init.
  */
 function nfl_init() {
 	add_shortcode( 'nfl-teams', 'nfl_shortcode' );
-}
-
-/**
- * Function to run on plugin activation
- */
-function nfl_activated() {
-
-}
-
-/**
- * Function to run on plugin deactivation
- */
-function nfl_deactivated() {
-
-}
-
-/**
- * Function to run on plugin uninstall
- */
-function nfl_uninstalled() {
-	remove_shortcode( 'nfl-teams' );
 }
 
 /**
